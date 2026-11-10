@@ -10,7 +10,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=DM+Sans:wght@400;500;600&display=swap');
 :root{--wine:#7b2536;--deep:#501827;--gold:#c99b52;--cream:#fff8ed;--ink:#593b35}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scrollbar-width:none}html::-webkit-scrollbar{display:none}body{margin:0;background:#f8eee2;color:var(--ink);font-family:'DM Sans',sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f8eee2;color:var(--ink);font-family:'DM Sans',sans-serif}
 button,input,select,textarea{font:inherit}.page{max-width:520px;margin:auto;background:var(--cream);min-height:100vh;overflow:hidden;box-shadow:0 0 45px #542b2418}
 .cover{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:34px 25px;position:relative;isolation:isolate;background:linear-gradient(145deg,#fff7e9,#f3dfc8 55%,#f8ebdc)}
 .cover:before,.cover:after{content:"";position:absolute;width:250px;height:250px;border:1px solid #c99b5266;border-radius:50%;z-index:-1}.cover:before{top:-115px;left:-110px}.cover:after{bottom:-120px;right:-100px}
@@ -33,7 +33,6 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--wine);font
 .first-page-heading{height:auto;padding:16px 10px 24px;background:#f4e8d9;text-align:center}
 .first-page-heading .shubh-vivah{color:#a67b35;font-family:Georgia,serif;font-size:clamp(17px,4.2vw,24px);font-weight:600;letter-spacing:1px}
 .first-page-heading .couple-heading{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;white-space:nowrap;color:#913c3c;font-family:Georgia,serif;font-style:italic;font-size:clamp(16px,4.7vw,27px);line-height:1.2}
-.first-page-heading .couple-heading>span{display:block}
 .first-page-heading .weds-text{color:#a67b35;font-size:.62em;font-style:italic;font-weight:normal}
 .first-page-heading .gold-ornament{display:flex;align-items:center;justify-content:center;gap:12px;color:#b48a43;font-size:22px;margin:12px auto 8px}
 .first-page-heading .gold-ornament span{display:block;width:clamp(44px,12vw,80px);height:1px;background:#b48a43}
@@ -61,14 +60,6 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--wine);font
 .events-heading h2{font-family:Georgia,serif;font-size:36px;font-style:italic;font-weight:normal;color:#903d3d;margin:8px 0}
 .events-heading p{font-family:Georgia,serif;font-size:14px;letter-spacing:2px}
 .events-divider{color:#b68d48;font-size:23px;margin-top:10px}
-.event-days{display:grid;gap:14px;max-width:850px;margin:0 auto 30px}
-.event-day{padding:18px 14px;background:#fffaf1;border:1px solid #d5b77c;border-radius:7px}
-.event-day h3{font-family:Georgia,serif;font-size:24px;font-style:italic;font-weight:normal;color:#903d3d;margin:0 0 5px}
-.event-day p{font-family:Georgia,serif;font-size:13px;font-style:italic;color:#826b59;margin:0}
-.event-day-with-events{padding-bottom:18px}
-.event-day-with-events .events-grid{margin-top:16px}
-.day-venue-section{width:100%;border:1px solid #d5b77c}
-.day-one .day1-dinner{grid-column:1/-1;width:calc(50% - 12px);justify-self:center}
 .events-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:850px;margin:auto}
 .wedding-events-section .event-card{background:#fffaf1;border:1px solid #d5b77c;border-radius:7px;padding:10px;text-align:center;box-shadow:0 5px 15px rgba(90,60,30,.08);position:relative}
 .event-image{width:100%;aspect-ratio:1/.9;border:1px solid #c9a45e;border-radius:5px;background:#f5ead7;overflow:hidden;margin-bottom:15px}
@@ -83,7 +74,7 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--wine);font
 .event-description{font-family:Georgia,serif;font-size:13px;line-height:1.6;font-style:italic;color:#826b59;padding:0 8px;min-height:60px}
 .event-location{font-family:Georgia,serif;font-size:12px;margin:12px 0 8px;color:#51392f}
 .event-location span{color:#a64a31;margin-right:5px}
-@media(max-width:600px){.wedding-events-section{padding:30px 12px}.events-grid{grid-template-columns:1fr;gap:22px;max-width:360px}.day-one .day1-dinner{grid-column:auto;width:100%}.wedding-events-section .event-card{padding:11px}.wedding-events-section .event-card h3{font-size:27px}.event-detail strong{font-size:14px}}
+@media(max-width:600px){.wedding-events-section{padding:30px 12px}.events-grid{grid-template-columns:1fr;gap:22px;max-width:360px}.wedding-events-section .event-card{padding:11px}.wedding-events-section .event-card h3{font-size:27px}.event-detail strong{font-size:14px}}
 .details{background:#f7ead9;padding-bottom:24px}.event-card{border:1px solid #d7b77f;padding:25px 15px;margin:16px 0;background:#fffaf1}
 .event-card h3{font-family:'Cormorant Garamond',serif;color:var(--wine);font-size:32px;font-weight:600;margin:7px}
 .event-meta{font-size:16px;font-weight:600;line-height:1.9}.event-icon{font-size:25px;color:var(--gold)}
@@ -97,7 +88,6 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--wine);font
 .venue-ornament b{font-size:22px;font-weight:normal}
 .venue-image-frame{width:100%;max-width:275px;aspect-ratio:.78;margin:0 auto 8px;overflow:hidden;border:3px solid #bd984f;border-radius:150px 150px 5px 5px;background:#f1e4ce;box-shadow:0 5px 10px rgba(91,62,31,.15);position:relative}
 .venue-photo{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
-.day-venue-section .venue-photo{object-position:64% center}
 .venue-name{font-family:Georgia,serif;font-size:24px;font-weight:normal;font-style:italic;color:#913d3d;margin:0 0 5px}
 .venue-address{font-family:Georgia,serif;font-size:13px;font-style:italic;color:#947c68;margin:5px 0 15px}
 .venue-name strong{font-weight:700}
@@ -184,156 +174,57 @@ footer{text-align:center;padding:32px 20px;background:var(--deep);color:#f7e5c8;
           <p>Moments to celebrate</p>
           <div class="events-divider">❧ ✦ ❧</div>
         </div>
-        <div class="event-days" aria-label="Wedding events by day">
-          <article class="event-day event-day-with-events day-one">
-            <h3>Day 1</h3>
-            <div class="events-grid">
-              <article class="event-card">
-                <div class="event-image"><img class="event-photo" src="assets/lagan.png" alt="Lagan ceremony"></div>
-                <div class="event-hindi">लगन</div>
-                <h3>Lagan</h3>
-                <div class="event-details">
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>2nd December 2026</strong></div>
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>11:00 AM</strong></div>
-                  <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>Shehnai Banquet Hall, Aligarh</strong></div>
-                </div>
-              </article>
-              <article class="event-card">
-                <div class="event-image"><img class="event-photo" src="assets/bhaat.png" alt="Bhaat ceremony"></div>
-                <div class="event-hindi">भात</div>
-                <h3>Bhaat</h3>
-                <div class="event-details">
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>2nd December 2026</strong></div>
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>2:00 PM</strong></div>
-                  <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>Shehnai Banquet Hall, Aligarh</strong></div>
-                </div>
-              </article>
-              <article class="event-card">
-                <div class="event-image"><img class="event-photo" src="assets/mhendi.png" alt="Mehendi celebration"></div>
-                <div class="event-hindi">मेहंदी</div>
-                <h3>Mehendi</h3>
-                <div class="event-details">
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>2nd December 2026</strong></div>
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>3:00 PM</strong></div>
-                  <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>Shehnai Banquet Hall, Aligarh</strong></div>
-                </div>
-              </article>
-              <article class="event-card">
-                <div class="event-image"><img class="event-photo" src="assets/sangeet.png" alt="Sangeet celebration"></div>
-                <div class="event-hindi">संगीत</div>
-                <h3>Sangeet</h3>
-                <div class="event-details">
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>2nd December 2026</strong></div>
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>4:00 PM</strong></div>
-                  <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>Shehnai Banquet Hall, Aligarh</strong></div>
-                </div>
-              </article>
-              <article class="event-card day1-dinner">
-                <div class="event-image"><img class="event-photo" src="assets/dinner.png" alt="Wedding dinner"></div>
-                <div class="event-hindi">रात्रिभोज</div>
-                <h3>Dinner</h3>
-                <div class="event-details">
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>2nd December 2026</strong></div>
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>8:00 PM</strong></div>
-                  <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>Shehnai Banquet Hall, Aligarh</strong></div>
-                </div>
-              </article>
+        <div class="events-grid">
+          <!-- EVENT 1: BARAAT -->
+          <article class="event-card">
+            <div class="event-image"><img class="event-photo" src="assets/event%202b.png" alt="Baraat welcome"></div>
+            <div class="event-hindi">बारात स्वागत</div>
+            <h3>The Baraat Arrives</h3>
+            <div class="event-details">
+              <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>04 December 2026</strong></div>
+              <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>12:00 Noon</strong></div>
+              <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>The Radha Vann, Aligarh</strong></div>
             </div>
+            <p class="event-description">A warm welcome to the groom and his family. Let the wedding celebrations begin!</p>
           </article>
-          <div class="venue-section day-venue-section">
-            <div class="venue-card">
-              <div class="venue-kicker">आयोजन स्थल</div>
-              <h2 class="venue-title">The Venue</h2>
-              <div class="venue-ornament"><span></span><b>✦</b><span></span></div>
-              <div class="venue-image-frame">
-                <img class="venue-photo" src="assets/shenai.png" alt="Shehnai Banquet Hall">
-              </div>
-              <h3 class="venue-name"><strong>Shehnai Banquet Hall</strong></h3>
-              <div class="venue-location">Aligarh</div>
-              <p class="venue-message">We look forward to celebrating with you</p>
-              <a class="venue-directions" href="https://www.google.com/maps/search/?api=1&amp;query=Shehnai+Banquet+Hall+Aligarh" target="_blank" rel="noopener">VIEW VENUE ON MAP ↗</a>
+
+          <!-- EVENT 2: WEDDING CEREMONY -->
+          <article class="event-card">
+            <div class="event-image"><img class="event-photo" src="assets/event%202a.png" alt="Wedding ceremony"></div>
+            <div class="event-hindi">शुभ विवाह</div>
+            <h3>Wedding Ceremony</h3>
+            <div class="event-details">
+              <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>04 December 2026</strong></div>
+              <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>1:00 PM</strong></div>
+              <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>The Radha Vann, Aligarh</strong></div>
             </div>
-          </div>
-          <article class="event-day event-day-with-events day-two">
-            <h3>Day 2</h3>
-            <div class="events-grid">
-              <article class="event-card">
-                <div class="event-image"><img class="event-photo" src="assets/haldi%20carnival.png" alt="Rang-e-Haldi"></div>
-                <div class="event-hindi">रंग-ए-हल्दी</div>
-                <h3>Rang-e-Haldi</h3>
-                <div class="event-details">
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>3rd December 2026</strong></div>
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>12:00 PM</strong></div>
-                  <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>The Radha Vann, Aligarh</strong></div>
-                </div>
-              </article>
-              <article class="event-card">
-                <div class="event-image"><img class="event-photo" src="assets/cocktail.png" alt="Cocktail celebration"></div>
-                <div class="event-hindi">कॉकटेल</div>
-                <h3>CockTail</h3>
-                <div class="event-details">
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>3rd December 2026</strong></div>
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>6:00 PM</strong></div>
-                  <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>The Radha Vann, Aligarh</strong></div>
-                </div>
-              </article>
-            </div>
+            <p class="event-description">Join us for the sacred wedding rituals and bless the couple as they begin their journey together.</p>
           </article>
-          <article class="event-day event-day-with-events">
-            <h3>Day 3</h3>
-            <div class="events-grid">
-              <!-- EVENT 1: BARAAT -->
-              <article class="event-card">
-                <div class="event-image"><img class="event-photo" src="assets/event%202b.png" alt="Baraat welcome"></div>
-                <div class="event-hindi">बारात स्वागत</div>
-                <h3>The Baraat Arrives</h3>
-                <div class="event-details">
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>04 December 2026</strong></div>
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>12:00 Noon</strong></div>
-                  <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>The Radha Vann, Aligarh</strong></div>
-                </div>
-                <p class="event-description">A warm welcome to the groom and his family. Let the wedding celebrations begin!</p>
-              </article>
 
-              <!-- EVENT 2: WEDDING CEREMONY -->
-              <article class="event-card">
-                <div class="event-image"><img class="event-photo" src="assets/event%202a.png" alt="Wedding ceremony"></div>
-                <div class="event-hindi">शुभ विवाह</div>
-                <h3>Wedding Ceremony</h3>
-                <div class="event-details">
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>04 December 2026</strong></div>
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>1:00 PM</strong></div>
-                  <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>The Radha Vann, Aligarh</strong></div>
-                </div>
-                <p class="event-description">Join us for the sacred wedding rituals and bless the couple as they begin their journey together.</p>
-              </article>
-
-              <!-- EVENT 3: DINNER -->
-              <article class="event-card">
-                <div class="event-image"><img class="event-photo" src="assets/event%202c.png" alt="Wedding dinner celebration"></div>
-                <div class="event-hindi">शुभ रात्रिभोज</div>
-                <h3>Dinner &amp; Celebrations</h3>
-                <div class="event-details">
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>04 December 2026</strong></div>
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>8:00 PM</strong></div>
-                  <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>The Radha Vann, Aligarh</strong></div>
-                </div>
-                <p class="event-description">Enjoy a delightful evening filled with delicious food, laughter and togetherness.</p>
-              </article>
-
-              <!-- EVENT 4: JAIMALA -->
-              <article class="event-card">
-                <div class="event-image"><img class="event-photo" src="assets/event%202d.png" alt="Jaimala ceremony"></div>
-                <div class="event-hindi">जयमाला</div>
-                <h3>Jaimala Ceremony</h3>
-                <div class="event-details">
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>04 December 2026</strong></div>
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>9:00 PM</strong></div>
-                  <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>The Radha Vann, Aligarh</strong></div>
-                </div>
-                <p class="event-description">Witness the beautiful exchange of garlands and a promise of togetherness for a lifetime.</p>
-              </article>
+          <!-- EVENT 3: DINNER -->
+          <article class="event-card">
+            <div class="event-image"><img class="event-photo" src="assets/event%202c.png" alt="Wedding dinner celebration"></div>
+            <div class="event-hindi">शुभ रात्रिभोज</div>
+            <h3>Dinner &amp; Celebrations</h3>
+            <div class="event-details">
+              <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>04 December 2026</strong></div>
+              <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>8:00 PM</strong></div>
+              <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>The Radha Vann, Aligarh</strong></div>
             </div>
+            <p class="event-description">Enjoy a delightful evening filled with delicious food, laughter and togetherness.</p>
+          </article>
+
+          <!-- EVENT 4: JAIMALA -->
+          <article class="event-card">
+            <div class="event-image"><img class="event-photo" src="assets/event%202d.png" alt="Jaimala ceremony"></div>
+            <div class="event-hindi">जयमाला</div>
+            <h3>Jaimala Ceremony</h3>
+            <div class="event-details">
+              <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>04 December 2026</strong></div>
+              <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>9:00 PM</strong></div>
+              <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>The Radha Vann, Aligarh</strong></div>
+            </div>
+            <p class="event-description">Witness the beautiful exchange of garlands and a promise of togetherness for a lifetime.</p>
           </article>
         </div>
       </section>
@@ -465,8 +356,8 @@ async function startMusic(){
       const AudioContextClass=window.AudioContext||window.webkitAudioContext;
       musicContext=new AudioContextClass();
       const resumePromise=musicContext.resume();
-      const response=await fetch("assets/final%20song.mp3");
-      if(!response.ok)throw new Error(`Could not load final song.mp3 (${response.status}).`);
+      const response=await fetch("assets/song1.mp3");
+      if(!response.ok)throw new Error(`Could not load song1.mp3 (${response.status}).`);
       musicBuffer=await musicContext.decodeAudioData(await response.arrayBuffer());
       await resumePromise;
     }else{
@@ -481,9 +372,9 @@ async function startMusic(){
     button.textContent="♫ Pause music";
     button.setAttribute("aria-pressed","true");
   }catch(error){
-    console.error("Could not play final song.mp3:",error);
+    console.error("Could not play song1.mp3:",error);
     button.textContent="♫ Retry music";
-    button.title="Could not play final song.mp3. Check that it is in the assets folder.";
+    button.title="Could not play song1.mp3. Check that it is in the assets folder.";
   }finally{
     musicLoading=false;
   }
